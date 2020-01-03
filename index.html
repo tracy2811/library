@@ -1,0 +1,48 @@
+<!DOCTYPE hmtl>
+<html lan="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Library</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<table>
+				<caption></caption>
+				<thead class="hidden">
+					<tr>
+						<th></th>
+						<th>Title</th>
+						<th>Author</th>
+						<th>Pages</th>
+						<th>Read</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<div>
+				<div class="hidden">
+					<fieldset>
+						<legend>New Book's Information</legend>
+						<label for="title">Book's Title: </label>
+						<input type="text" id="title" name="title" placeholder="Tao Te Ching" required><br>
+						<label for="author">Book's Author: </label>
+						<input type="text" id="author" name="author" placeholder="Laozi" required><br>
+						<label for="pages">Total number of pages: </label>
+						<input type="number" id="pages" name="pages" min="1" placeholder="255" required><br>
+					</fieldset>
+					<fieldset>
+						<legend>Have you read this book?</legend>
+						<input type="radio" id="yes" name="read" value="yes" checked>
+						<label for="yes">Yes</label>
+						<input type="radio" id="no" name="read" value="no">
+						<label for="no">No</label>
+					</fieldset>
+				</div>
+				<button id="add">Add Book</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
